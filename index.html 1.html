@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arancina de Paris | Maison Fondée en 1954</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#C5A059',
+                        'brand-bronze': '#8E6B2E',
+                        'brand-dark': '#110D06',
+                        'brand-cream': '#FDFBF7',
+                    },
+                    fontFamily: {
+                        'serif': ['Cinzel', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased tracking-normal">
+
+    <nav class="fixed w-full z-50 bg-brand-cream/95 backdrop-blur-md border-b border-brand-gold/10 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-8 h-24 flex items-center justify-between">
+            
+            <a href="#home" class="flex items-center space-x-4 group">
+                <div class="h-16 w-16 overflow-hidden rounded-full border border-brand-gold/30 bg-brand-dark p-0.5 flex items-center justify-center shadow-md transition-transform group-hover:scale-105 duration-500">
+                    <img src="c:\Users\giuse\OneDrive\Desktop\sit\1778838064882.png" alt="Arancina de Paris Brand Logo" class="h-full w-full object-contain block">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg font-bold tracking-widest text-brand-bronze leading-none">ARANCINA</span>
+                    <span class="text-[9px] font-semibold tracking-[0.35em] text-brand-gold uppercase mt-1.5">DE PARIS</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex space-x-12 text-[11px] font-medium uppercase tracking-[0.25em]">
+                <a href="#home" class="text-brand-dark hover:text-brand-gold transition-colors duration-300">Accueil</a>
+                <a href="#histoire" class="text-brand-dark/70 hover:text-brand-gold transition-colors duration-300">Notre Histoire</a>
+                <a href="#rosalia" class="text-brand-dark/70 hover:text-brand-gold transition-colors duration-300">Sainte Rosalie</a>
+                <a href="#menu" class="text-brand-dark/70 hover:text-brand-gold transition-colors duration-300">Prix & Carte</a>
+            </div>
+
+            <a href="#commander" class="bg-brand-dark text-white border border-brand-gold/40 px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark hover:border-transparent transition-all duration-300 shadow-sm">
+                Commander
+            </a>
+        </div>
+    </nav>
+
+    <header id="home" class="relative min-h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-white via-brand-cream to-white">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center w-full py-16 relative z-10">
+            
+            <div class="lg:col-span-5 space-y-8 text-center lg:text-left order-2 lg:order-1">
+                <div class="inline-flex items-center space-x-2 bg-brand-gold/10 border border-brand-gold/20 px-4 py-1.5 rounded-full">
+                    <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-brand-bronze">Palerme 1954 — Paris 2026</span>
+                </div>
+                
+                <div class="space-y-4">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif text-brand-dark leading-[1.2] tracking-wide">
+                        Rosalia voit l'arancina dorée <span class="italic text-brand-gold font-normal block mt-2">et par son goût reste enchantée</span>
+                    </h1>
+                    <div class="w-16 h-[1px] bg-brand-gold mx-auto lg:mx-0 mt-6"></div>
+                </div>
+
+                <p class="text-gray-500 text-sm font-light leading-relaxed max-w-md mx-auto lg:mx-0">
+                    Découvrez l'affiche officielle de notre Maison. Un instant de contemplation pure où la figure de Rosalie s'émerveille devant l'éclat et la perfection culinaire de notre arancina traditionnelle.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#commander" class="bg-brand-dark text-white border border-transparent px-8 py-4 rounded-xl text-xs font-semibold uppercase tracking-widest shadow-xl hover:bg-brand-bronze transition-colors duration-300">Simuler un achat</a>
+                    <a href="#menu" class="border border-brand-gold/40 text-brand-bronze hover:bg-white px-8 py-4 rounded-xl text-xs font-semibold uppercase tracking-widest transition-all duration-300">Consulter la carte</a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 flex justify-center order-1 lg:order-2 w-full">
+                <div class="relative w-full max-w-lg bg-white border border-brand-gold/15 rounded-[44px] p-4 shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-brand-gold/30">
+                    <div class="w-full rounded-[30px] overflow-hidden bg-white border border-gray-100 flex items-center justify-center">
+                        <img src="c:\Users\giuse\OneDrive\Desktop\sit\Screenshot_20260517-171808.png" alt="Affiche Officielle — Sainte Rosalie" class="w-full h-auto object-contain block max-h-[65vh]">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="histoire" class="py-28 bg-white border-t border-brand-gold/10">
+        <div class="max-w-5xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-brand-gold font-semibold tracking-[0.25em] uppercase text-[10px] block">L'Héritage Culinaire</span>
+                <h2 class="text-3xl sm:text-4xl font-serif text-brand-dark">Une Recette Sacrée Née en 1954</h2>
+                <div class="w-12 h-[1px] bg-brand-gold"></div>
+                <p class="text-gray-500 font-light text-sm leading-relaxed">
+                    Chaque création de notre enseigne célèbre le voyage mémorable reliant la Sicile à la France. Depuis **1954**, nous perpétuons avec rigueur les secrets de fabrication pour offrir une expérience gastronomique d'excellence au cœur de Paris.
+                </p>
+            </div>
+            <div class="bg-brand-cream p-12 rounded-[36px] border border-brand-gold/15 text-center">
+                <h4 class="font-serif font-semibold text-brand-dark text-lg mb-1">Maison Principale</h4>
+                <p class="text-xs text-gray-400 tracking-wide">Rue de la liberté 13 (PR) - 1er Arrondissement, Paris</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rosalia" class="py-24 bg-brand-cream/40 border-y border-brand-gold/10 text-center">
+        <div class="max-w-2xl mx-auto px-8 space-y-4">
+            <h2 class="text-2xl font-serif text-brand-dark tracking-wide">L'Inspiration Artistique</h2>
+            <p class="text-gray-500 font-light leading-relaxed italic text-sm">
+                "Comme l'illustre notre blason, la splendeur di l'arancina dorée subjugue et rassemble. C'est sous cette bienveillance esthétique que notre maison s'engage à préserver l'authenticité absolue du goût."
+            </p>
+        </div>
+    </section>
+
+    <section id="menu" class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center space-y-3 mb-20">
+                <h2 class="text-3xl font-serif text-brand-dark tracking-wide">La Sélection Prestige</h2>
+                <div class="w-12 h-[1px] bg-brand-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-brand-cream/30 p-8 rounded-[32px] border border-brand-gold/15 flex flex-col justify-between transition-all duration-300 hover:border-brand-gold/40">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-serif font-semibold text-brand-dark">Arancina au Beurre</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed">Mozzarella fondante, fins dés di jambon blanc de Paris et sauce béchamel onctueuse.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-6 mt-8 border-t border-brand-gold/10">
+                        <span class="text-2xl font-semibold font-serif text-brand-bronze">2,50 €</span>
+                        <a href="#commander" class="text-[9px] font-bold uppercase tracking-wider text-brand-dark hover:text-brand-gold transition-colors">Ajouter <i class="fa-solid fa-plus ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="bg-brand-dark p-8 rounded-[32px] border border-brand-gold/15 flex flex-col justify-between text-white transition-all duration-300 hover:border-brand-gold/50">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-serif font-semibold text-white">Arancina à la Viande</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed">Ragù de bœuf traditionnel mijoté de longues heures, petits pois et riz infusé au safran pur.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-6 mt-8 border-t border-white/10">
+                        <span class="text-2xl font-semibold font-serif text-brand-gold">2,70 €</span>
+                        <a href="#commander" class="text-[9px] font-bold uppercase tracking-wider text-brand-gold hover:text-white transition-colors">Ajouter <i class="fa-solid fa-plus ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commander" class="py-28 bg-brand-cream/40">
+        <div class="max-w-4xl mx-auto px-8">
+            <div class="bg-white rounded-[36px] shadow-xl border border-brand-gold/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+                
+                <div class="lg:col-span-4 bg-brand-dark p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-serif text-brand-gold mb-3">Votre Panier</h4>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed">Configurez votre sélection pour simuler un achat financier d'évaluation.</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 p-10 space-y-6">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="text-[9px] font-bold uppercase tracking-wider text-brand-bronze block mb-2.5">Quantité Au Beurre</label>
+                                <input type="number" id="qtyB" min="0" value="0" onchange="calc()" class="w-full bg-brand-cream border border-brand-gold/20 p-3.5 rounded-xl text-xs font-semibold focus:outline-none focus:border-brand-gold">
+                            </div>
+                            <div>
+                                <label class="text-[9px] font-bold uppercase tracking-wider text-brand-bronze block mb-2.5">Quantité À la Viande</label>
+                                <input type="number" id="qtyC" min="0" value="0" onchange="calc()" class="w-full bg-brand-cream border border-brand-gold/20 p-3.5 rounded-xl text-xs font-semibold focus:outline-none focus:border-brand-gold">
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-brand-cream border border-brand-gold/15 rounded-xl flex justify-between items-center">
+                            <span class="text-[10px] font-medium uppercase tracking-widest text-brand-dark">Montant du Panier :</span>
+                            <span id="totalOut" class="text-2xl font-serif font-semibold text-brand-bronze">0,00 €</span>
+                        </div>
+
+                        <button type="button" onclick="checkoutSim()" class="w-full bg-brand-dark border border-brand-gold/30 text-white text-xs font-semibold uppercase tracking-widest py-4 rounded-xl shadow-sm hover:bg-brand-gold hover:text-brand-dark transition-colors duration-300">
+                            Simuler la Transaction
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-14 bg-brand-dark text-white/40 text-center text-xs border-t border-brand-gold/10">
+        <p class="font-serif text-brand-gold tracking-widest mb-3">ARANCINA DE PARIS — DEPUIS 1954</p>
+        <p class="text-[9px] tracking-wide text-gray-500">© 2026 Arancina de Paris. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function calc() {
+            const b = parseFloat(document.getElementById('qtyB').value) || 0;
+            const c = parseFloat(document.getElementById('qtyC').value) || 0;
+            const total = (b * 2.50) + (c * 2.70);
+            document.getElementById('totalOut').innerText = total.toFixed(2).replace('.', ',') + ' €';
+        }
+
+        function checkoutSim() {
+            const finalVal = document.getElementById('totalOut').innerText;
+            if(finalVal === '0,00 €') {
+                alert('Veuillez ajouter des arancines à votre panier.');
+                return;
+            }
+            alert('Simulation de paiement réussie ! ✨\nLe montant virtuel de ' + finalVal + ' a été validé avec successo.');
+        }
+    </script>
+</body>
+</html>
